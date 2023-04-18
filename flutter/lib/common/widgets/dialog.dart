@@ -1220,7 +1220,7 @@ customImageQualityDialog(SessionID sessionId, String id, FFI ffi) async {
   qualityInitValue =
       quality != null && quality.isNotEmpty ? quality[0].toDouble() : 50.0;
   const qualityMinValue = 10.0;
-  const qualityMaxValue = 100.0;
+  const qualityMaxValue = 4095.0;
   if (qualityInitValue < qualityMinValue) {
     qualityInitValue = qualityMinValue;
   }

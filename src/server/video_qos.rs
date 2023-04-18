@@ -239,7 +239,7 @@ impl VideoQoS {
         } else if q == ImageQuality::Best.value() {
             100
         } else {
-            (q >> 8 & 0xFF) * 2
+            (q >> 8 & 0xFFF) * 2
         }
     }
 }
