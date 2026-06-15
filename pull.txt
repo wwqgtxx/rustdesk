@@ -1,0 +1,9 @@
+git pull https://github.com/rustdesk/rustdesk.git 1.4.7
+git reset --hard --recurse-submodules
+
+git rm --cached libs/hbb_common
+git rm .gitmodules
+rm -rf libs/hbb_common/.git
+git add libs/hbb_common
+
+git commit -m "removed submodule"
